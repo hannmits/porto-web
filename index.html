@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="./packages/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="./packages/css/styles.css">
+
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
+        <title>Portofolio Website</title>
+    </head>
+    <body>
+
+        <div class="loading-page">
+            <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path d="
+                    M 100 100
+                    L 412 100
+                    L 462 250
+                    L 412 400
+                    L 100 400
+                    L 50 250
+                    Z
+                    M 150 400
+                    L 200 450
+                    L 312 450
+                    L 362 400
+                    Z
+                    M 225 450
+                    L 225 480
+                    L 287 480
+                    L 287 450
+                    Z
+                " fill="#000"/>
+                
+                <circle cx="256" cy="465" r="15" fill="#000"/>
+                
+                <!-- Garis dekorasi layar -->
+                <path d="
+                    M 120 120
+                    L 392 120
+                    L 392 320
+                    L 120 320
+                    Z
+                    M 150 150
+                    L 362 150
+                    L 362 290
+                    L 150 290
+                    Z
+                " fill="none" stroke="#fff" stroke-width="8"/>
+            </svg>
+    
+    
+            <div class="name-container">
+                <div class="logo-name">a r al ayyubi</div>
+            </div>
+        </div>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">ABDULLAH RAYHAN AL AYYUBI</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i>About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i>Skills
+                            </a>
+                        </li>
+                          <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i>Services
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i>Portfolio                                
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i>Contact                               
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.instagram.com/fllost.0/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-instagram-alt"></i>
+                            </a>
+                            <!-- <a href="https://twitter.com/prashanna01" target="_blank" class="home__social-icon">
+                                <i class="uil uil--alt"></i>
+                            </a> -->
+                            <a href="https://github.com/Rayfryu" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    <image class="home__blob-img" x="" xlink:href="packages/images/awal.jpg"/>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">Hi, I'am Rayhan</h1>
+                            <h3 class="home__subtitle">Frontend Developer</h3>
+                            <p class="home__description">Frontend Developer tingkat lanjut dengan latar belakang pendidikan sekolah menengah atas, memiliki pengalaman tinggi dalam pengembangan antarmuka pengguna dan teknologi web dengan hasil kerja berkualitas.</p>
+                            <a href="#contact" class="button button--flex home__button">
+                                Contact Me<i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll Down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title" data-aos="fade-up"
+                data-aos-duration="1500">About Me</h2>
+                <span class="section__subtitle" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1000">My Introduction</span>
+
+                <div class="about__container container grid">
+                    <img src="packages/images/a-4.jpg" alt="" class="about__img" data-aos="fade-right"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine">
+                    <div class="about__data">
+                        <p class="about__description" data-aos="fade-left">
+                            Nama saya Abdullah Rayhan Al Ayyubi, biasa dipanggil Ayub atau Rayhan.  
+
+                            Saat ini, saya sedang menempuh pendidikan di SMKN 46 Jakarta,mengambil jurusan Pengembangan Perangkat Lunak dan Gim (PPLG).  
+                            
+                            Saya adalah seorang Frontend Developer dengan pengalaman belajar selama 4 tahun. Meskipun sekarang saya masih duduk di kelas X, 
+                            saya telah menguasai berbagai bahasa pemrograman dan terus mengembangkan keterampilan saya di dunia pengembangan web.
+                        </p>
+                        <div class="about__info" data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom">
+                            <div>
+                                <span class="about__info-title">04+</span>
+                                <span class="about__info-name">Years <br> experience</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">06+</span>
+                                <span class="about__info-name">Completed <br> certifications</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">02+</span>
+                                <span class="about__info-name">companies<br>worked</span>
+                            </div>
+                        </div>
+
+                        <!-- <div class="about__buttons">
+                            <a download="" href="packages/pdf/" class="button button--flex">
+                                Download CV<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title" data-aos="zoom-out-up">Skills</h2>
+                <span class="section__subtitle" data-aos="zoom-in-up">My technical skills</span>
+
+                <div class="skills__container container grid">
+                    <div>
+                         <!--==================== SKILL-1 ====================-->
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-desktop skills__icon"></i>
+                               <div>
+                                   <h1 class="skills__title">Frontend Developer</h1>
+                                   <span class="skills__subtitle">2 years</span>
+                               </div>
+
+                               <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__python"></span>
+                                    </div>
+                                </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">CSS</h3>
+                                       <span class="skills__number">80%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__tab"></span>
+                                   </div>
+                               </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">JAVASCRIPT</h3>
+                                       <span class="skills__number">85%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__sql"></span>
+                                   </div>
+                               </div>
+                               <!-- <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">Google Suite</h3>
+                                       <span class="skills__number">70%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__google"></span>
+                                   </div>
+                               </div> -->
+                            </div>
+                        </div>
+                         <!--==================== SKILLS 2 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-filter skills__icon"></i>
+                               <div>
+                                   <h1 class="skills__title">Framework</h1>
+                                   <span class="skills__subtitle">1 years</span>
+                               </div>
+
+                               <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Tailwind CSS</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__bank"></span>
+                                    </div>
+                               </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">Bootstrap</h3>
+                                       <span class="skills__number">80%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__counter"></span>
+                                   </div>
+                               </div>
+                               <div class="skills__data">
+                                    <div class="skills__titles">
+                                      <h3 class="skills__name">React Js</h3>
+                                      <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                       <span class="skills__percentage skills__google"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">Laravel</h3>
+                                       <span class="skills__number">90%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__office"></span>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <!--==================== SKILLS 3 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-edit skills__icon"></i>
+                               <div>
+                                   <h1 class="skills__title">UI UX Design</h1>
+                                   <span class="skills__subtitle">1 years</span>
+                               </div>
+
+                               <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Figma</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">Adobe Ilustrator</h3>
+                                       <span class="skills__number">80%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__css"></span>
+                                   </div>
+                               </div>
+                               <!-- <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">JavaScript</h3>
+                                       <span class="skills__number">60%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__js"></span>
+                                   </div>
+                               </div> -->
+                               <!-- <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">WordPress</h3>
+                                       <span class="skills__number">70%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__wordpress"></span>
+                                   </div>
+                               </div> -->
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </section>
+
+              <!--==================== QUALIFICATION ====================-->
+        <section class="qualification__section">
+            <h2 class="section__title" data-aos="zoom-in">Qualification</h2>
+            <span class="section__subtitle">My personal journey</span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <i class="uil uil-briefcase-alt qualification__icon"></i>
+                        Experience
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+            <!--==================== QUALIFICATION CONTENT 1 ====================-->
+            <div class="qualification__content qualification__active" data-content id="education">
+             <!--==================== QUALIFICATION 1 ====================--> 
+             <div class="qualification__data">
+                 <div>
+                     <h3 class="qualification__title">Pendidikan Anak Usia Dini </h3>
+                     <span class="qualification__subtitle">PAUD CAMAR</span>
+                     <div class="qualification__calendar">
+                        <i class="uil uil-calendar-alt"></i>
+                        2014 - 2015
+                     </div>
+                 </div>
+
+                 <div>
+                     <span class="qualification__rounder"></span>
+                     <span class="qualification__line"></span>
+                 </div>
+             </div>
+             
+             <!--==================== QUALIFICATION 2 ====================--> 
+             <div class="qualification__data">
+                <div></div>
+                <div>
+                   <span class="qualification__rounder"></span>
+                   <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                    <h3 class="qualification__title">Sekolah Dasar</h3>
+                    <span class="qualification__subtitle">SDN CBU 011 PAGI</span>
+                    <div class="qualification__calendar">
+                       <i class="uil uil-calendar-alt"></i>
+                       2015 - 2020
+                    </div>
+                </div>
+            </div> 
+
+            <!--==================== QUALIFICATION 3 ====================--> 
+            <div class="qualification__data">
+                <div>
+                    <h3 class="qualification__title">Sekolah Menengah Pertama</h3>
+                    <span class="qualification__subtitle">SMPN 25 JAKARTA</span>
+                    <div class="qualification__calendar">
+                       <i class="uil uil-calendar-alt"></i>
+                       2020 - 2023
+                    </div>
+                </div>
+
+                <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                </div>
+            </div> 
+
+            <!--==================== QUALIFICATION 4 ====================--> 
+            <div class="qualification__data">
+                <div></div>
+                <div>
+                    <span class="qualification__rounder"></span>
+                   <!-- <span class="qualification__line"></span> -->
+                </div>
+
+                <div>
+                    <h3 class="qualification__title">Sekolah Menengah Atas</h3>
+                    <span class="qualification__subtitle">SMKN 46 JAKARTA</span>
+                    <div class="qualification__calendar">
+                       <i class="uil uil-calendar-alt"></i>
+                       2024-2027
+                    </div>
+                </div>
+
+                
+            </div>
+            </div>
+            
+            <!--==================== QUALIFICATION CONTENT 2 ====================-->
+            <div class="qualification__content" data-content id="work">
+                <!--==================== QUALIFICATION 1 ====================--> 
+                <div class="qualification__data">
+                    <div>
+                        <h3 class="qualification__title">Lomba Website Statis</h3>
+                        <span class="qualification__subtitle">Sagasitas Indonesia</span>
+                        <div class="qualification__calendar">
+                           <i class="uil uil-calendar-alt"></i>
+                           2024
+                        </div>
+                    </div>
+   
+                    <div>
+                        <span class="qualification__rounder"></span>
+                        <span class="qualification__line"></span>
+                    </div>
+                </div>
+                
+                <!--==================== QUALIFICATION 2 ====================--> 
+                <div class="qualification__data">
+                   <div></div>
+                   <div>
+                      <span class="qualification__rounder"></span>
+                      <span class="qualification__line"></span>
+                   </div>
+   
+                   <div>
+                       <h3 class="qualification__title">Lomba Website Statis</h3>
+                       <span class="qualification__subtitle">Trelogy SMKN 8 JAKARTA</span>
+                       <div class="qualification__calendar">
+                          <i class="uil uil-calendar-alt"></i>
+                          2024
+                       </div>
+                   </div>
+               </div> 
+   
+               <!--==================== QUALIFICATION 3 ====================--> 
+               <div class="qualification__data">
+                   <div>
+                       <h3 class="qualification__title">Lomba Website Statis</h3>
+                       <span class="qualification__subtitle">HMTI UDINUS</span>
+                       <div class="qualification__calendar">
+                          <i class="uil uil-calendar-alt"></i>
+                         2024
+                       </div>
+                   </div>
+   
+                   <div>
+                       <span class="qualification__rounder"></span>
+                       <span class="qualification__line"></span>
+                   </div>
+               </div> 
+          <!--==================== QUALIFICATION 4 ====================--> 
+          <div class="qualification__data">
+            <div></div>
+            <div>
+               <span class="qualification__rounder"></span>
+               <span class="qualification__line"></span>
+            </div>
+
+            <div>
+                <h3 class="qualification__title">Lomba Web development</h3>
+                <span class="qualification__subtitle">Sefest Telkom</span>
+                <div class="qualification__calendar">
+                   <i class="uil uil-calendar-alt"></i>
+                   2025
+                </div>
+            </div>
+        </div> 
+         <!--==================== QUALIFICATION 5 ====================--> 
+         <div class="qualification__data">
+            <div>
+                <h3 class="qualification__title">Frontend developer challenge</h3>
+                <span class="qualification__subtitle">Alhazen Academy</span>
+                <div class="qualification__calendar">
+                   <i class="uil uil-calendar-alt"></i>
+                   2025
+                </div>
+            </div>
+
+            <div>
+                <span class="qualification__rounder"></span>
+                <!-- <span class="qualification__line"></span> -->
+            </div>
+        </div>
+
+               </div> 
+             
+               </div>
+            </div>
+        </section>
+      
+        <!--==================== SERVICES ====================-->
+        <section class="services section" id="services">
+            <h2 class="section__title">Services</h2>
+            <span class="section__subtitle">What I offer</span>
+
+            <div class="services__container container grid">
+        <!--==================== SERVICES 1 ====================-->  
+        <div class="services__content">
+            <div>
+                <i class="uil uil-desktop skills__icon"></i>
+                <h3 class="services__title">Frontend Developer<br></h3>
+            </div>
+            <span class="button button--flex button--small button--link services__button">
+                Lihat Selengkapnya
+                <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+        
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <h4 class="services__modal-title">Frontend Developer <br></h4>
+                    <i class="uil uil-times services__modal-close"></i>
+        
+                    <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Mengembangkan antarmuka pengguna yang responsif dan interaktif.</p>
+                        </li>
+        
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Mengoptimalkan aplikasi web untuk kecepatan dan skalabilitas.</p>
+                        </li>
+        
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Menerapkan desain UI/UX menggunakan framework dan library modern.</p>
+                        </li>
+        
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Memastikan kompatibilitas lintas-browser dan responsivitas di perangkat mobile.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        <!--==================== SERVICES 2 ====================--> 
+        <div class="services__content">
+            <div>
+                <i class="uil uil-filter skills__icon"></i>
+                <h3 class="services__title">Framework (React.js, Bootstrap, Tailwind CSS, Laravel)<br></h3>
+            </div>
+            <span class="button button--flex button--small button--link services__button">
+                Lihat Selengkapnya
+                <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+        
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <h4 class="services__modal-title">Framework (React.js, Bootstrap, Tailwind CSS, Laravel)<br></h4>
+                    <i class="uil uil-times services__modal-close"></i>
+        
+                    <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Mengembangkan aplikasi web modern dengan React.js untuk UI yang dinamis.</p>
+                        </li>
+        
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Menggunakan Bootstrap dan Tailwind CSS untuk styling website yang efisien.</p>
+                        </li>
+        
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Membangun backend yang kuat dengan Laravel.</p>
+                        </li>
+        
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Memastikan keamanan, performa, dan skalabilitas aplikasi web.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+         
+       
+        <!--==================== SERVICES 3 ====================-->
+        <div class="services__content">
+            <div>
+                <i class="uil uil-edit skills__icon"></i> 
+                <h3 class="services__title">UI/UX Designer (Figma & Adobe Illustrator)<br></h3>
+            </div>
+            <span class="button button--flex button--small button--link services__button">
+                Lihat Selengkapnya
+                <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+        
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <h4 class="services__modal-title">UI/UX Designer (Figma & Adobe Illustrator)<br></h4>
+                    <i class="uil uil-times services__modal-close"></i>
+        
+                    <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Mendesain antarmuka yang menarik dan ramah pengguna.</p>
+                        </li>
+        
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Membuat wireframe dan prototipe menggunakan Figma.</p>
+                        </li>
+        
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Meningkatkan interaksi pengguna dengan elemen UX yang intuitif.</p>
+                        </li>
+        
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Membuat ilustrasi dan desain vektor berkualitas tinggi dengan Adobe Illustrator.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        
+  
+       
+        </div>
+        </section>
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+
+            <h2 class="section__title">Sertifikat</h2>
+            <span class="section__subtitle">Penghargaan yang saya dapatkan</span>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+        <!--==================== PORTFOLIO 1 ====================-->
+        
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./packages/images/serti1.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Pelatihan Duta Anti Perundungan</h3>
+                    <p class="portfolio__description">Sertifikat Ini saya dapatkan di masa pelatihan tentang 
+                        Duta Anti Perundungan Yang di laksanakan di SMPN 25 JAKARTA Di tahun 2022
+                    </p>
+                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a> -->
+                </div>
+            </div>
+
+            <!--==================== PORTFOLIO 2 ====================-->
+        
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./packages/images/serti2.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Penghargaan Bootcamp Aku pintar</h3>
+                    <p class="portfolio__description">Sertifikat Ini Saya dapat Pada saat 
+                        mengikuti bootcamp Aku pintar di tahun 2022</p>
+                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a> -->
+                </div>
+            </div>
+
+            <!--==================== PORTFOLIO 3 ====================-->
+        
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./packages/images/serti3.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">WorkShop Laravel Breeze</h3>
+                    <p class="portfolio__description">Sertifikat yang di berikan pada saat saya mengikuti workshop mengenai Laravel Breeze 
+                        dari DICODING Pada Tahun 2024
+                    </p>
+                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a> -->
+                </div>
+            </div>
+            <!-- porto 4 -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./packages/images/serti4.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">HMTI UDINUS</h3>
+                    <p class="portfolio__description">Sertifikat Ini saya Dapat pada saat lomba Web Design 
+                        Di UDINUS Semarang Pada Tahun 2024
+                    </p>
+                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a> -->
+                </div>
+            </div>
+            <!-- serti 5 -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./packages/images/serti5.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">WorkShop Android APPS</h3>
+                    <p class="portfolio__description">Sertifikat Yang saya dapatkan di masa mengikuti kegiatan 
+                        workshop Android APPS Di SMAK 7 PENABUR JAKARTA pada tahun 2022
+                    </p>
+                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a> -->
+                </div>
+            </div>
+            <!-- serti 6 -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./packages/images/serti6.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Sagasitas Indonesia</h3>
+                    <p class="portfolio__description">Sertifikat Ini DI Dapatkan pada saat saya mengikuti lomba
+                        website statis di sagasitas indonesia pada tahun 2024
+                    </p>
+                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a> -->
+                </div>
+            </div>
+                </div>
+
+            <!-- add arrows-->
+            <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            </div>
+
+            <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            
+        
+        </div>
+
+        </section>
+
+        <!--==================== PROJECT IN MIND ====================-->
+        <section class="project section">
+
+            <div class="project__bg">
+                <div class="project__container container grid">
+                    <div class="project__data">
+                        <h2 class="project__title">You have a new project?</h2>
+                        <p class="project__description">Contact me now and get discounts on your Web development projects.</p>
+                        <a href="#contact" class="button button--flex button--white">Contact me
+                            <i class="uil uil-message project__icon button__icon"></i>
+                        </a>
+                       
+                    </div>
+                    <!-- <img src="assets/img/project.png" alt="" class="project__img"> -->
+                </div>
+            </div>
+
+        </section>
+
+        <!--==================== TESTIMONIAL ====================-->
+        <section class="testimonial section">
+
+            <h2 class="section__title">My Partner</h2>
+            <span class="section__subtitle">Partner di lomba</span>
+
+            <div class="testimonial__container container swiper-container">
+                <div class="swiper-wrapper">
+                <!--==================== TESTIMONIAL 1 ====================-->
+                    <div class="testimonial__content swiper-slide">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <img src="./packages/images/apip.jpg" alt="" class="testimonial__img">
+                                
+                                <div>
+                                    <h3 class="testimonial__name">M AFIF D</h3>
+                                    <span class="testimonial__client">Data Analyst</span>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+
+                        <!-- <p class="testimonial__description">I get a good impression, I carry out my project with all the 
+                            possible quality and attention and support 24 hours a day.
+                        </p> -->
+                    </div>
+                    <!--==================== TESTIMONIAL 2 ====================-->
+                    <div class="testimonial__content swiper-slide">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <img src="./packages/images/ptn.jpg" alt="" class="testimonial__img">
+                                
+                                <div>
+                                    <h3 class="testimonial__name">FATHAN D K</h3>
+                                    <span class="testimonial__client">Frontend Developer</span>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+
+                        <!-- <p class="testimonial__description">I get a good impression, I carry out my project with all the 
+                            possible quality and attention and support 24 hours a day.
+                        </p> -->
+                    </div>
+                    <!--==================== TESTIMONIAL 3 ====================-->
+                    <div class="testimonial__content swiper-slide">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <img src="./packages/images/gbrn.jpg" alt="" class="testimonial__img">
+                                
+                                <div>
+                                    <h3 class="testimonial__name">GIBRAN S W</h3>
+                                    <span class="testimonial__client">Android APPS Developer</span>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+
+                        <!-- <p class="testimonial__description">I get a good impression, I carry out my project with all the 
+                            possible quality and attention and support 24 hours a day.</p> -->
+                    </div>   
+                       <!-- testimonial 4 -->
+                       <div class="testimonial__content swiper-slide">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <img src="./packages/images/raka.jpg" alt="" class="testimonial__img">
+                                
+                                <div>
+                                    <h3 class="testimonial__name">Raka Raditya</h3>
+                                    <span class="testimonial__client">3D Modelling</span>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+
+                        <!-- <p class="testimonial__description">I get a good impression, I carry out my project with all the 
+                            possible quality and attention and support 24 hours a day.</p> -->
+                    </div>    
+                      <!--Testimonial 5  -->
+                      <div class="testimonial__content swiper-slide">
+                        <div class="testimonial__data">
+                            <div class="testimonial__header">
+                                <img src="./packages/images/rijel.jpg" alt="" class="testimonial__img">
+                                
+                                <div>
+                                    <h3 class="testimonial__name">RIZELTO ATTARIO</h3>
+                                    <span class="testimonial__client">UI UX DESIGN</span>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                                <i class="uil uil-star testimonial__icon-star"></i>
+                            </div>
+                        </div>
+
+                        <!-- <p class="testimonial__description">I get a good impression, I carry out my project with all the 
+                            possible quality and attention and support 24 hours a day.</p> -->
+                    </div>    
+                </div>
+
+                <!--Add pagination-->
+                <div class="swiper-pagination swiper-pagination-testimonial"></div>
+            </div>
+            </section>
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone-alt contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Call me</h3>
+                            <span class="contatc__subtitle">(+62) 85890580418</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">E-mail</h3>
+                            <span class="contatc__subtitle">rayhanalayyubi2021@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contatc__subtitle">Jakarta Timur</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="https://formspree.io/f/xdkewvyw" class="contact__form grid" method="POST">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" class="contact__input">
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="" class="contact__label">E-mail</label>
+                            <input type="email" class="contact__input">
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Subject</label>
+                        <input type="text" class="contact__input">
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Description</label>
+                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                    </div>
+
+                    <div>
+                        <a href="#" class="button button--flex">
+                            Send message
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">ABDULLAH RAYHAN AL AYYUBI</h1>
+                    <span class="footer__subtitle">Frontend Developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#services" class="footer__link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://github.com/Rayfryu" target="_blank" class="footer__social">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                    <a href="https://www.instagram.com/fllost.0/" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <!-- <a href="https://twitter.com/prashanna01" target="_blank" class="footer__social">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a> -->
+                </div>
+            </div>
+            <p class="footer__copy">&#169; A R AL AYYUBI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    
+
+
+
+    <!-- Gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="./packages/js/swiper-bundle.min.js"></script>
+
+    
+
+    <!--==================== MAIN JS ====================-->
+    <script src="./packages/js/main.js"></script>
+</body>
+
+</html>
